@@ -50,3 +50,41 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
 }
+
+.countdown {
+    /* display: flex;*/
+    display: none;
+    transform: scale(2);
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: .9375rem;
+}
+
+.time h2 {
+    margin: 0 0 .3125rem;
+}
+
+@media (max-width: 31.25rem) {
+    h1 {
+        font-size: 2.8125rem;
+    }
+
+    .time {
+        margin: .3125rem;
+    }
+
+    .time h2 {
+        font-size: .75rem;
+        margin: 0;
+    }
+
+    .time small {
+        font-size: .625rem;
+    }
+}
+
